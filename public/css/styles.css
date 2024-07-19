@@ -1,0 +1,32 @@
+
+
+*
+{
+  font-weight: bold;
+  box-sizing: border-box !important;
+}
+
+body {
+  background-color: #9bcee6c1 !important;
+}
+
+.centered {
+    padding-top: 0;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #000;
+  overflow-y: hidden;
+
+}
+
+
+.contact:hover
+{
+ 
+  border-bottom : 3px solid #0d6efd !important;
+}

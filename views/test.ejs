@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid d-flex flex-column mt-3 p-0">
+        <%  for(const error of warning) { %>
+         <div class="error p-0 mx-1 py-2 rounded text-center  border-2 border-danger row d-flex align-items-center my-2" style="border: 3px solid red;background-color: rgba(255, 171, 4, 0.383);">
+            <span class="material-symbols-outlined p-0 m-0 col-1 text-danger">error</span>
+           <p class="fw-bolder text-danger p-0 m-0 px-2 rounded text-center col-11 fs-6" > <%= error.message %></p>
+         </div>
+         <% } %>
+         <% for(const succ of success) {  %>
+           <div class="success p-0 mx-1 py-2 rounded text-center  border-2 border-success row d-flex align-items-center my-2" style="border: 3px solid green;background-color: rgba(172, 255, 47, 0.475);">
+             <span class="material-symbols-outlined p-0 m-0 col-1 text-success"> task_alt</span>
+             <p class="fw-bolder text-success p-0 m-0 rounded text-center col-11 " > <%= succ.message%></p>
+           </div>                
+           <% } %>           
+       </div>
+
+       
+</body>
+</html>
