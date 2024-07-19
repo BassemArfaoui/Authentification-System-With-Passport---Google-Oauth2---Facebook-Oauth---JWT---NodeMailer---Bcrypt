@@ -1,6 +1,6 @@
 # SecretsApp(Full Authentification System)
 
-SecretsApp is a full-stack web application that allows users to anonymously upload and view secrets. It's mase to showcase how to build robust authentication system with Express.js with features such as user registration and login with Passport, Email verification with NodeMailer, Google OAuth2, Facebook OAuth, password reset with JWT, and secure password handling with bcrypt
+SecretsApp is a full-stack web application that allows users to anonymously upload and view secrets. It's made to showcase how to build robust authentication system with Express.js with features such as user registration and login with Passport, Email verification with NodeMailer, Google OAuth2, Facebook OAuth, password reset with JWT, and secure password hashing and salting with bcrypt .
 
 ## Features
 
