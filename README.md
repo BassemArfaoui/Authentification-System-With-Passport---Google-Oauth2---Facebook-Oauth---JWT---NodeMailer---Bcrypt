@@ -19,7 +19,6 @@ SecretsApp is a full-stack web application that allows users to anonymously uplo
 - Authentication: Passport, Google OAuth2, Facebook OAuth
 - Email: Nodemailer
 - Token Management: JWT
-- Sending Emails: NodeMailer
 - Password Security: Bcrypt
 - Environment variables: dotenv
 
@@ -62,12 +61,12 @@ SecretsApp is a full-stack web application that allows users to anonymously uplo
    # Database variables
    DB_USER=postgres
    DB_HOST=localhost
-   DB_NAME=
-   PG_PASSWORD=
+   DB_NAME=//database name
+   PG_PASSWORD=//postgres password
    DB_PORT=5432
 
    # Session variables
-   SESSION_SECRET=//random secret
+   SESSION_SECRET=//random strong secret
 
    # Google app variables
    # Got after creating a Google OAuth2 app
@@ -89,7 +88,7 @@ SecretsApp is a full-stack web application that allows users to anonymously uplo
    SMTP_HOST=smtp.gmail.com
 
    # Support Team Email
-   SUPPORT_MAIL=
+   SUPPORT_MAIL=//any other Email
 
    # JWT
    JWT_SECRET=any strong secret
@@ -133,6 +132,24 @@ Nodemon automatically restarts your server when code changes are detected. To us
    npm run dev
    ```
 
+   
+
+## Contributing
+
+Contributions are welcome! If you would like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
+
+### Needed Contributions
+
+- **Make the app responsive:** Improve the front-end design to ensure that the application is fully responsive and works well on various devices and screen sizes.
+- **Bug fixes:** Identify and fix any existing bugs in the application.
+
+
 ## Additional Information
 
 - This project uses Passport for authentication, integrating both Google OAuth2 and Facebook OAuth.
@@ -140,5 +157,4 @@ Nodemon automatically restarts your server when code changes are detected. To us
 - JWT is used for generating tokens for the password reset functionality.
 - Bcrypt is used for secure password hashing and salting.
 - dotenv is used for managing environment variables.
-- Flash messages are used to handle and display errors and success messages.
 
